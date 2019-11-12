@@ -1,5 +1,8 @@
 #!/usr/bin/node
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5b18961221f02fe7c2c8d8e452b50e43550c704c
 const fs = require('fs');
 const file = fs.createWriteStream('./big.file');
 
@@ -9,4 +12,7 @@ for(let i=0; i<= 1e6; i++) {
 }
 
 file.end();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5b18961221f02fe7c2c8d8e452b50e43550c704c

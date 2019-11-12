@@ -1,4 +1,5 @@
 #!/usr/bin/node
+<<<<<<< HEAD
 
 var circle = {
 /**
@@ -25,3 +26,15 @@ var circle = {
 console.dir(module);
 module.exports = circle;
 
+=======
+t pi = Math.PI;
+
+module.exports = {
+    diameter: (radius) => 2 * radius,
+    circumference: (radius) => pi * 2 * radius,
+     area: (radius) => pi * radius * radius
+
+};
+
+console.dir(module);
+>>>>>>> 5b18961221f02fe7c2c8d8e452b50e43550c704c
