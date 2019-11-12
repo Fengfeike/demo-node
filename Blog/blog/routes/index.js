@@ -1,6 +1,6 @@
-var express = require('express');
+var exp = require('express');
 var {users,chapterList} = require('../data.json');
-var router = express.Router();
+var router = exp.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,12 +8,12 @@ router.get('/', function(req, res, next) {
 });
 router.post('/',function(req,res,next){
   if(users[0].username === req.body.username && users[0].password === req.body.password){
-    res.redirect('/list');
+    res.redirect('/Table');
+  }else if(req.body.username === '' && req.body.password === ''){
+    res.end('username or password is wrong!')
   }else if(req.body.username === '' && req.body.password !== ''){
     res.end('username or password is wrong!')
   }else if(req.body.password === '' && req.body.username !== ''){
-    res.end('username or password is wrong!')
-  }else if(req.body.username === '' && req.body.password === ''){
     res.end('username or password is wrong!')
   }else{
     res.end('username or password is wrong!')
